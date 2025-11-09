@@ -1,0 +1,50 @@
+2025-11-07 15:30:26,559 - Log file for this run: C:\Users\Siote\Documents\COE187\ai8x-training\logs\2025.11.07-153026\2025.11.07-153026.log
+2025-11-07 15:30:26,810 - => loading checkpoint logs/2025.11.06-200027/qat_best-quantized.pth.tar
+2025-11-07 15:30:26,817 - => Checkpoint contents:
++----------------------+-------------+----------------+
+| Key                  | Type        | Value          |
+|----------------------+-------------+----------------|
+| arch                 | str         | ai85flowersnet |
+| compression_sched    | dict        |                |
+| epoch                | int         | 19             |
+| extras               | dict        |                |
+| optimizer_state_dict | dict        |                |
+| optimizer_type       | type        | Adam           |
+| state_dict           | OrderedDict |                |
++----------------------+-------------+----------------+
+
+2025-11-07 15:30:26,818 - => Checkpoint['extras'] contents:
++-----------------+--------+-------------------+
+| Key             | Type   | Value             |
+|-----------------+--------+-------------------|
+| best_epoch      | int    | 19                |
+| best_mAP        | int    | 0                 |
+| best_top1       | float  | 91.66666666666666 |
+| clipping_method | str    | MAX_BIT_SHIFT     |
+| current_mAP     | int    | 0                 |
+| current_top1    | float  | 91.66666666666666 |
++-----------------+--------+-------------------+
+
+2025-11-07 15:30:26,819 - Loaded compression schedule from checkpoint (epoch 19)
+2025-11-07 15:30:26,828 - => loaded 'state_dict' from checkpoint 'logs/2025.11.06-200027/qat_best-quantized.pth.tar'
+2025-11-07 15:30:26,936 - Optimizer Type: <class 'torch.optim.sgd.SGD'>
+2025-11-07 15:30:26,936 - Optimizer Args: {'lr': 0.1, 'momentum': 0.9, 'dampening': 0, 'weight_decay': 0.0001, 'nesterov': False, 'maximize': False, 'foreach': None, 'differentiable': False, 'fused': None}
+2025-11-07 15:30:27,265 - Dataset sizes:
+	training=12960
+	validation=1440
+	test=1179
+2025-11-07 15:30:27,266 - --- test ---------------------
+2025-11-07 15:30:27,268 - 1179 samples (256 per mini-batch)
+2025-11-07 15:31:03,675 - Test: [    5/    5]    Loss 0.439490    Top1 84.223919    Top5 99.830365    
+2025-11-07 15:31:05,552 - ==> Top1: 84.224    Top5: 99.830    Loss: 0.439
+
+2025-11-07 15:31:05,553 - ==> Confusion:
+[[146  10   4  15   2   3]
+ [ 18 170   5   2   3   2]
+ [  5   2 184   1   0   8]
+ [  2   1   5 168   0  23]
+ [  9   9   2   5 163  12]
+ [  4   1   5  25   3 162]]
+
+2025-11-07 15:31:05,555 - 
+2025-11-07 15:31:05,556 - Log file for this run: C:\Users\Siote\Documents\COE187\ai8x-training\logs\2025.11.07-153026\2025.11.07-153026.log
